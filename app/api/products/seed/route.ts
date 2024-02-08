@@ -14,7 +14,7 @@ export const GET = async (request: NextRequest)=>{
     await ProductModel.deleteMany()
     await ProductModel.insertMany(products)
 
-    return NextResponse.json({
+    return NextResponse.json({  
         message:'Succès',
         users,
         products,

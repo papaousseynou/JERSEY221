@@ -1,17 +1,17 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
 
 export const SearchBox = () => {
   const searchParams = useSearchParams();
   const q = searchParams.get("q") || "";
-  const category = searchParams.get("category") || "Tous";
+  const category = searchParams.get("categoty") || "All";
 
   const { data: categories, error } = useSWR("/api/products/categories");
 
   if (error) return error.message;
-  if (!categories) return "Chargement...";
-
+  if (!categories) return "Chargement";
   return (
     <form action="/search" method="GET">
       <div className="join">

@@ -1,5 +1,4 @@
 "use client";
-
 import useCartService from "@/lib/hooks/useCartStore";
 import Image from "next/image";
 import Link from "next/link";

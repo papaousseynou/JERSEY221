@@ -1,5 +1,6 @@
 import DrawerButton from "@/components/DrawButton";
-import Providers from "@/components/Providers";
+
+import Providers from "@/components/Provisders";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/header/Header";
 import type { Metadata } from "next";

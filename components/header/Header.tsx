@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Menu from "./Menu";
-import { SearchBox } from "./searchBox";
+import { SearchBox } from "./SearchBox";
 
 const Header = () => {
   return (

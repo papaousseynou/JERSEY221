@@ -1,8 +1,8 @@
-import bcrypt from 'bcryptjs'
-import NextAuth from 'next-auth'
-import CredentialsProvider from 'next-auth/providers/credentials'
-import dbConnect from './dbConnect'
-import UserModel from './models/UserModel'
+import bcrypt from 'bcryptjs';
+import NextAuth from 'next-auth';
+import CredentialsProvider from 'next-auth/providers/credentials';
+import dbConnect from './dbConnect';
+import UserModel from './models/UserModel';
 
 export const config = {
   providers: [
